@@ -1,6 +1,9 @@
 <div>
     <h1>{{title}}</h1>
 </div>
+<div class="black-banner">
+
+</div>
 <ng-container *ngFor="let faq of faqsList; let i = index">
     <div class="accordion-item flex-row-container" (click)="togglePanel(faq)" [ngClass]="{'activeHeader': faq.showPanel}">
         <div class="queston-no"><strong>Q{{i+1}}</strong></div>
